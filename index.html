@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PIEDRA PAPEL TIJERETA</title>
+    <!--Fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="scores">
+        <p>
+          Ordenador :
+          <span id="ordenador_score">0</span>
+        </p>
+        <p>
+          Tu :
+          <span id="user_score">0</span>
+        </p>
+      </div>
+      <div class="manos">
+        <button class="rock" onclick="checker('piedra')">
+          <i class="far fa-hand-rock"></i>
+        </button>
+        <button class="paper" onclick="checker('papel')">
+          <i class="far fa-hand-paper"></i>
+        </button>
+        <button class="scissor" onclick="checker('tijera')">
+          <i class="far fa-hand-scissors"></i>
+        </button>
+      </div>
+      <div class="detalles">
+        <p id="user_choice"></p>
+        <p id="ordenador_choice"></p>
+        <p id="resultado"></p>
+      </div>
+    </div>
+
+    <!--Script-->
+    <script src="script.js"></script>
+  </body>
+</html>
